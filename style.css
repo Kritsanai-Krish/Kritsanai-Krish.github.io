@@ -381,7 +381,7 @@
 
         .state p span {
             display: block;
-            opacity: 0;
+            opacity: 1;
             animation: slideDown 0.8s ease forwards calc(var(--i) * 0.03s);
         }
 
