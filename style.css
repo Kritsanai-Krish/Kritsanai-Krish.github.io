@@ -256,11 +256,11 @@
         }
 
         .button span {
-            color: #6c757d;
+            color: inherit;
         }
 
         .button svg {
-            color: #6c757d;
+            color: inherit;
         }
 
         .button:hover {
@@ -381,7 +381,7 @@
 
         .state p span {
             display: block;
-            opacity: 0;
+            opacity: 1;
             animation: slideDown 0.8s ease forwards calc(var(--i) * 0.03s);
         }
 
