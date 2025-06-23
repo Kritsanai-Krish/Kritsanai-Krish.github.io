@@ -2828,9 +2828,10 @@
                 quizQuestions = shuffleArray(questions).slice(0, 10);
             } else {
                 quizQuestions = shuffleArray(questions);
-                return;
                 while (quizQuestions.length < 10) {
-                    quizQuestions.push(questions[Math.floor(Math.random() * questions.length)]);
+                    quizQuestions.push(
+                        questions[Math.floor(Math.random() * questions.length)]
+                    );
                 }
             }
         }
@@ -2889,18 +2890,6 @@
                 }, 500);
 
             }, 3000);
-        });
-
-        // Validate registration inputs
-        function validateRegisterInputs() {
-            const allInputs = [nameInput, lastnameInput, numberInput];
-            const isValid = allInputs.every(input => input.value.trim() !== '');
-            submitRegister.disabled = !isValid;
-            submitRegister.style.opacity = isValid ? '1' : '0.5';
-            submitRegister.style.cursor = isValid ? 'pointer' : 'not-allowed';
-        }
-        [nameInput, lastnameInput, numberInput].forEach(input => {
-            input.addEventListener('input', validateRegisterInputs);
         });
 
         // Validate registration inputs
