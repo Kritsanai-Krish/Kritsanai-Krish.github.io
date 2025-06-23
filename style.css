@@ -256,11 +256,11 @@
         }
 
         .button span {
-            color: #6c757d;
+            color: inherit;
         }
 
         .button svg {
-            color: #6c757d;
+            color: inherit;
         }
 
         .button:hover {
